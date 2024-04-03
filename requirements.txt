@@ -2,3 +2,4 @@ pathlib
 huggingface_hub
 ipywidgets
 wget
+pandas
