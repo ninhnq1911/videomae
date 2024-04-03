@@ -1,5 +1,5 @@
 [project]
-name = "ninhnq1911_mltools"
+name = "mltools"
 version = "0.0.1"
 authors = [
   { name="Ninh Nguyen", email="ninhnguyendx779@gmail.com" },
