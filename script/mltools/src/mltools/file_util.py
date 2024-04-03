@@ -1,4 +1,5 @@
 import os
+import shutil
 import glob
 from pathlib import Path
 
@@ -30,7 +31,19 @@ def get_subfolders(dir_path: str | Path) -> list[str]:
 
 
 def count_files(dir_path: str | Path, ext: str = "*") -> int:
+    return len(get_file_list(dir_path, ext))
+
+
+def get_file_list(dir_path: str | Path, ext: str = "*") -> list[str]:
     if dir_path is None:
-        return 0
+        return []
     dir_path = Path(dir_path).resolve().as_posix()
-    return len(glob.glob(f"{dir_path}/**/*.{ext}", recursive=False))
+    return glob.glob(f"{dir_path}/**/*.{ext}", recursive=True)
+
+
+def copy_file(src: str | Path, dst: str | Path) -> None:
+    src = resolve_path(src)
+    dst = resolve_path(dst)
+    make_dir(dst)
+    print(f"Copying {src} to {dst}")
+    shutil.copy(src, dst)
