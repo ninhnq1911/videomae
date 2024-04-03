@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ninhnq1911_mltools
+Version: 0.0.1
+Summary: A small example package
+Author-email: Ninh Nguyen <ninhnguyendx779@gmail.com>
+Project-URL: Homepage, https://github.com/ninhnq1911/videomae
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+#This is Ninh's package for ML tools
