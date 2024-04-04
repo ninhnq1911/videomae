@@ -7,7 +7,7 @@ from videomae.train.compute import collate_fn, compute_metrics
 from videomae.train.model import get_image_processor, get_model
 from videomae.train.trainer import get_train_args
 from videomae.train.transform import init_train_transform, init_val_transform
-from videomae.train.utl import display_gif, print_sample_info
+from videomae.eval.utl import display_gif, print_sample_info
 from videomae.config import clip_duration, dataset_dir, model_ckpt, model_local, new_model_name
 
 

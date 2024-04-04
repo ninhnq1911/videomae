@@ -1,4 +1,5 @@
 import imageio
+from videomae.config import mean, std
 from IPython.display import Image
 
 
