@@ -1,0 +1,13 @@
+pathlib
+huggingface_hub
+ipywidgets
+wget
+pandas
+torch 
+torchvision 
+torchaudio
+pytorchvideo 
+transformers 
+evaluate
+accelerate
+imageio
